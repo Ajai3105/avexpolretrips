@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Reservation | Artisan Dining</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">A.</span>
+        <span>ARTISAN <small>DINING & MASTERCLASSES</small></span>
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="table.html">Tables</a>
+        <a href="menu.html">Menu</a>
+        <a href="booking.html">Book Now</a>
+    </nav>
+</header>
+
+<section class="page-heading">
+    <p class="section-label">YOUR BOOKING DETAILS</p>
+    <h1>Check Your <em>Reservation.</em></h1>
+    <p>Enter your booking details below.</p>
+</section>
+
+<main class="form-section">
+    <section class="form-card">
+        <h2>Find Your Booking</h2>
+        <p>Enter your reference and registered email address.</p>
+
+        <form action="reservation-status.html" method="get">
+            <label for="reference">Booking Reference *</label>
+            <input type="text" id="reference" name="reference"
+                   placeholder="Example: ART12345" required>
+
+            <label for="email">Registered Email *</label>
+            <input type="email" id="email" name="email"
+                   placeholder="you@example.com" required>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+                Check Reservation →
+            </button>
+        </form>
+
+        <p class="form-note">
+            This demo cannot retrieve real booking records.
+        </p>
+
+        <a href="booking.html" class="text-link">
+            Make a New Reservation ↗
+        </a>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Artisan Dining</p>
+    <a href="index.html">Back to Home</a>
+</footer>
+
+</body>
+</html>

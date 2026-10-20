@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Artisan Dining</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">A.</span>
+        <span>ARTISAN <small>DINING & MASTERCLASSES</small></span>
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="table.html">Tables</a>
+        <a href="menu.html">Menu</a>
+        <a href="booking.html">Booking</a>
+        <a href="check-conseravtion.html">My Reservation</a>
+    </nav>
+</header>
+
+<section class="page-heading">
+    <p class="section-label">YOUR NEXT EXPERIENCE</p>
+    <h1>Reserve Your <em>Moment.</em></h1>
+    <p>Choose your table and let us prepare your experience.</p>
+</section>
+
+<main class="form-section">
+    <section class="form-card">
+        <h2>Booking Details</h2>
+        <p>Please complete all required fields.</p>
+
+        <form action="confirmation.html" method="get">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email"
+                   placeholder="you@example.com" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[6-9][0-9]{9}"
+                   placeholder="10-digit mobile number" required>
+
+            <label for="table">Choose Table Type *</label>
+            <select id="table" name="table" required>
+                <option value="">Select a table</option>
+                <option>Couple Table</option>
+                <option>Classic Dining Table</option>
+                <option>Family Table</option>
+                <option>Garden Table</option>
+                <option>Private Dining Room</option>
+                <option>Chef's Counter</option>
+            </select>
+
+            <label for="experience">Experience *</label>
+            <select id="experience" name="experience" required>
+                <option value="">Choose experience</option>
+                <option>Signature Dining</option>
+                <option>Private Dining</option>
+                <option>Italian Pasta Masterclass</option>
+                <option>Modern Plating Masterclass</option>
+                <option>Artisan Dessert Lab</option>
+            </select>
+
+            <label for="food">Menu Preference</label>
+            <select id="food" name="food">
+                <option>Vegetarian</option>
+                <option>Vegan</option>
+                <option>Non-Vegetarian</option>
+                <option>No Preference</option>
+            </select>
+
+            <div class="form-row">
+                <div>
+                    <label for="date">Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="time">Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Choose time</option>
+                        <option>12:00 PM</option>
+                        <option>2:00 PM</option>
+                        <option>6:00 PM</option>
+                        <option>7:00 PM</option>
+                        <option>8:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="guests">Number of Guests *</label>
+            <select id="guests" name="guests" required>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+            </select>
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" rows="3"
+                      placeholder="Birthday, dietary preferences, etc."></textarea>
+
+            <button class="btn btn-primary submit-btn" type="submit">
+                Submit Booking Request →
+            </button>
+        </form>
+
+        <p class="form-note">
+            This is a front-end demo. Submission does not save a reservation.
+        </p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Artisan Dining</p>
+    <a href="index.html">Back to Home</a>
+</footer>
+
+</body>
+</html>
